@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95CAE4"
+    tools:context=".activity.SettingsActivity">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <CheckBox
+        android:id="@+id/bg_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/game_bg_music"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/game_difficulty"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <Spinner
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/level"
+        app:layout_constraintBaseline_toBaselineOf="@id/level"
+        app:layout_constraintLeft_toRightOf="@id/level" />
+</android.support.constraint.ConstraintLayout>

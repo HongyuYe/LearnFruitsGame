@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GameApp</string>
+    <string-array name="level">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string name="answer_tips">Shake your phone to restart</string>
+    <string name="result_keep">Great! Keep up the good work.</string>
+    <string name="result_encourage">Not bad. Try to do better.</string>
+    <string name="result_comfort">Not good. Try to improve it.</string>
+    <string name="share_tip">Share</string>
+    <string name="share_content">content...</string>
+    <string name="share_success">Shared successfully.</string>
+    <string name="share_fail">Shared unsuccessfully.</string>
+    <string name="twitter_verify_err">Login to Twitter unsuccessfully.</string>
+    <string name="game_bg_music">Background Music</string>
+    <string name="game_difficulty">Game Difficulty</string>
+    <string name="high_score_empty_tip">No Record</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
